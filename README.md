@@ -20,6 +20,16 @@ import { clamp } from "./math/clamp";
 const value = clamp(100, 0, 25); // 25
 ```
 
+**[Rand](https://github.com/theoplawinski/utils/blob/main/math/rand.ts)**
+
+Returns a random number between the specified values
+
+```javascript
+import { rand } from "./math/rand";
+
+const value = rand(0, 100); // Output between 0-100
+```
+
 ## Licence
 
 [MIT](LICENSE)
