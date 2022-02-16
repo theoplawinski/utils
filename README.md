@@ -40,6 +40,18 @@ import { rand } from "./math/rand";
 const value = rand(0, 100); // Output between 0-100
 ```
 
+### Etc.
+
+**[UseIsHandheldDevice](https://github.com/theoplawinski/utils/blob/main/functions/useIsHandheldDevice.ts)**
+
+Detects if it's a handheld device. Returns a boolean
+
+```javascript
+import { useIsHandheldDevice } from "./functions/useIsHandheldDevice";
+
+const isHandheldDevice = useIsHandheldDevice() // True or false
+```
+
 ## Licence
 
 [MIT](LICENSE)
