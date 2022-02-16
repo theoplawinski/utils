@@ -12,7 +12,7 @@ To use it, you have to copy/past the needed script in your project.
 
 **[Clamp](https://github.com/theoplawinski/utils/blob/main/math/clamp.ts)**
 
-Clamps a value between an lower and upper bound
+Clamps a value between the specified lower and upper bound
 
 ```javascript
 import { clamp } from "./math/clamp";
@@ -22,7 +22,7 @@ const value = clamp(100, 0, 25); // 25
 
 **[Lerp](https://github.com/theoplawinski/utils/blob/main/math/lerp.ts)**
 
-Linear interpolation from start to end using the specified alpha
+Linear interpolation between the specified values (start, end, alpha)
 
 ```javascript
 import { lerp } from "./math/lerp";
