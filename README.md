@@ -8,13 +8,28 @@ To use it, you have to copy/past the needed script in your project.
 
 ## Functions
 
+### Array
+
+**[InArray](https://github.com/theoplawinski/utils/blob/main/array/inArray.ts)**
+
+Searches an array for the specified value
+
+```typescript
+import { inArray } from "./array/inArray";
+
+const array = ["foo", "bar"];
+const value = "foo";
+
+const isValueInArray = inArray(array, value); // true
+```
+
 ### Math
 
 **[Clamp](https://github.com/theoplawinski/utils/blob/main/math/clamp.ts)**
 
 Clamps a value between the specified lower and upper bound
 
-```javascript
+```typescript
 import { clamp } from "./math/clamp";
 
 const value = clamp(100, 0, 25); // 25
@@ -24,7 +39,7 @@ const value = clamp(100, 0, 25); // 25
 
 Linear interpolation between the specified values (start, end, alpha)
 
-```javascript
+```typescript
 import { lerp } from "./math/lerp";
 
 const value = lerp(25, 100, 0.1); // 32.5
@@ -34,7 +49,7 @@ const value = lerp(25, 100, 0.1); // 32.5
 
 Returns a random number between the specified values
 
-```javascript
+```typescript
 import { rand } from "./math/rand";
 
 const value = rand(0, 100); // Output between 0-100
@@ -46,7 +61,7 @@ const value = rand(0, 100); // Output between 0-100
 
 Converts a string into a slug
 
-```javascript
+```typescript
 import { slugify } from "./string/slugify";
 
 const slug = slugify("Some str"); // "some-str"
@@ -58,7 +73,7 @@ const slug = slugify("Some str"); // "some-str"
 
 Detects if it's a handheld device
 
-```javascript
+```typescript
 import { useIsHandheldDevice } from "./functions/useIsHandheldDevice";
 
 const isHandheldDevice = useIsHandheldDevice() // True or false
