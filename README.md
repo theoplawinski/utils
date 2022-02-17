@@ -10,6 +10,19 @@ To use it, you have to copy/past the needed script in your project.
 
 ### Array
 
+**[ArrayEquals](https://github.com/theoplawinski/utils/blob/main/array/arrayEquals.ts)**
+
+Checks if the arrays are equal
+
+```typescript
+import { arrayEquals } from "./array/arrayEquals";
+
+const a = ["foo", "bar"];
+const b = ["foo"];
+
+const isValueInArray = arrayEquals(a, b); // false
+```
+
 **[InArray](https://github.com/theoplawinski/utils/blob/main/array/inArray.ts)**
 
 Searches an array for the specified value
