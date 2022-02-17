@@ -56,7 +56,7 @@ const slug = slugify("Some str"); // "some-str"
 
 **[UseIsHandheldDevice](https://github.com/theoplawinski/utils/blob/main/functions/useIsHandheldDevice.ts)**
 
-Detects if it's a handheld device. Returns a boolean
+Detects if it's a handheld device
 
 ```javascript
 import { useIsHandheldDevice } from "./functions/useIsHandheldDevice";
