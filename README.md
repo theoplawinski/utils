@@ -40,6 +40,18 @@ import { rand } from "./math/rand";
 const value = rand(0, 100); // Output between 0-100
 ```
 
+### String
+
+**[Slugify](https://github.com/theoplawinski/utils/blob/main/string/slugify.ts)**
+
+Converts a string into a slug
+
+```javascript
+import { slugify } from "./string/slugify";
+
+const slug = slugify("Some str"); // "some-str"
+```
+
 ### Etc.
 
 **[UseIsHandheldDevice](https://github.com/theoplawinski/utils/blob/main/functions/useIsHandheldDevice.ts)**
