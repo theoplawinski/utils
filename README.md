@@ -10,7 +10,7 @@ To use it, you have to copy/past the needed script in your project.
 
 ### Array
 
-**[ArrayEquals](https://github.com/theoplawinski/utils/blob/main/array/arrayEquals.ts)**
+#### [ArrayEquals](https://github.com/theoplawinski/utils/blob/main/array/arrayEquals.ts)
 
 Checks if the arrays are equal
 
@@ -19,11 +19,13 @@ import { arrayEquals } from "./array/arrayEquals";
 
 const a = ["foo", "bar"];
 const b = ["foo"];
+const c = ["foo", "bar"];
 
-const isValueInArray = arrayEquals(a, b); // false
+arrayEquals(a, b); // false
+arrayEquals(a, c); // true
 ```
 
-**[InArray](https://github.com/theoplawinski/utils/blob/main/array/inArray.ts)**
+#### [InArray](https://github.com/theoplawinski/utils/blob/main/array/inArray.ts)
 
 Searches an array for the specified value
 
@@ -31,65 +33,73 @@ Searches an array for the specified value
 import { inArray } from "./array/inArray";
 
 const array = ["foo", "bar"];
-const value = "foo";
+const a = "foo";
+const b = "Bar";
 
-const isValueInArray = inArray(array, value); // true
+inArray(array, a); // true
+inArray(array, b); // false
 ```
 
 ### Math
 
-**[Clamp](https://github.com/theoplawinski/utils/blob/main/math/clamp.ts)**
+#### [Clamp](https://github.com/theoplawinski/utils/blob/main/math/clamp.ts)
 
 Clamps a value between the specified lower and upper bound
 
 ```typescript
 import { clamp } from "./math/clamp";
 
-const value = clamp(100, 0, 25); // 25
+clamp(24, 20, 30) // 24
+clamp(12, 20, 30) // 20
+clamp(32, 20, 30) // 30
 ```
 
-**[Lerp](https://github.com/theoplawinski/utils/blob/main/math/lerp.ts)**
+#### [Lerp](https://github.com/theoplawinski/utils/blob/main/math/lerp.ts)
 
-Linear interpolation between the specified values (start, end, alpha)
+Returns the value between two numbers at a specified, decimal midpoint
 
 ```typescript
 import { lerp } from "./math/lerp";
 
-const value = lerp(25, 100, 0.1); // 32.5
+lerp(20, 80, 0)   // 20
+lerp(20, 80, 1)   // 80
+lerp(20, 80, 0.5) // 40
 ```
 
-**[Rand](https://github.com/theoplawinski/utils/blob/main/math/rand.ts)**
+#### [Rand](https://github.com/theoplawinski/utils/blob/main/math/rand.ts)
 
 Returns a random number between the specified values
 
 ```typescript
 import { rand } from "./math/rand";
 
-const value = rand(0, 100); // Output between 0-100
+rand(0, 100); // Output between 0-100
 ```
 
 ### String
 
-**[Slugify](https://github.com/theoplawinski/utils/blob/main/string/slugify.ts)**
+#### [Slugify](https://github.com/theoplawinski/utils/blob/main/string/slugify.ts)
 
 Converts a string into a slug
 
 ```typescript
 import { slugify } from "./string/slugify";
 
-const slug = slugify("Some str"); // "some-str"
+const str = "Some str";
+
+slugify(str); // "some-str"
 ```
 
 ### Etc.
 
-**[UseIsHandheldDevice](https://github.com/theoplawinski/utils/blob/main/functions/useIsHandheldDevice.ts)**
+#### [UseIsHandheldDevice](https://github.com/theoplawinski/utils/blob/main/functions/useIsHandheldDevice.ts)
 
 Detects if it's a handheld device
 
 ```typescript
 import { useIsHandheldDevice } from "./functions/useIsHandheldDevice";
 
-const isHandheldDevice = useIsHandheldDevice() // True or false
+useIsHandheldDevice() // true or false
 ```
 
 ## Licence

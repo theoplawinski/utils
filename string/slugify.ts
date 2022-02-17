@@ -53,6 +53,22 @@ const SLUG_REGEX = [
   },
 ]
 
+/**
+ * Slugify
+ * String to convert to slug
+ *
+ * Example:
+ * ```typescript
+ * import { slugify } from "./string/slugify";
+ *
+ * const str = "Some str";
+ *
+ * slugify(str); // "some-str"
+ * ```
+ *
+ * @param {string} input: String to convert to slug
+ * @return {string}
+ */
 export const slugify = (input: string): string => {
   for (let i = 0; i < SLUG_REGEX.length; i++) {
     input = input.replace(SLUG_REGEX[i].regex, SLUG_REGEX[i].char)
