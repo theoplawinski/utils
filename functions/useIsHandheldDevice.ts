@@ -6,7 +6,7 @@
  * ```typescript
  * import { useIsHandheldDevice } from "./functions/useIsHandheldDevice";
  *
- * useIsHandheldDevice() // true or false
+ * useIsHandheldDevice(); // true or false
  * ```
  *
  * @return {boolean}

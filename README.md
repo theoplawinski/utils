@@ -79,6 +79,16 @@ lerp(20, 80, 1)   // 80
 lerp(20, 80, 0.5) // 40
 ```
 
+#### [RandomBool](https://github.com/theoplawinski/utils/blob/main/math/randomBool.ts)
+
+Returns true or false
+
+```typescript
+import { randomBool } from "./math/randomBool";
+
+randomBool(); // true or false
+```
+
 #### [RandomRange](https://github.com/theoplawinski/utils/blob/main/math/randomRange.ts)
 
 Returns a random number between the specified values
@@ -122,7 +132,7 @@ Detects if it's a handheld device
 ```typescript
 import { useIsHandheldDevice } from "./functions/useIsHandheldDevice";
 
-useIsHandheldDevice() // true or false
+useIsHandheldDevice(); // true or false
 ```
 
 ## Licence
