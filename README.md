@@ -79,14 +79,24 @@ lerp(20, 80, 1)   // 80
 lerp(20, 80, 0.5) // 40
 ```
 
-#### [Rand](https://github.com/theoplawinski/utils/blob/main/math/rand.ts)
+#### [RandomRange](https://github.com/theoplawinski/utils/blob/main/math/randomRange.ts)
 
 Returns a random number between the specified values
 
 ```typescript
-import { rand } from "./math/rand";
+import { randomRange } from "./math/randomRange";
 
-rand(0, 100); // Output between 0-100
+randomRange(25, 100); // Output between 25-100
+```
+
+#### [RandomTo](https://github.com/theoplawinski/utils/blob/main/math/randomTo.ts)
+
+Returns a random number between 0 and the specified value, excluded
+
+```typescript
+import { randomTo } from "./math/randomTo";
+
+randomTo(25); // Output between 0-24
 ```
 
 ### String
