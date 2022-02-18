@@ -40,6 +40,19 @@ inArray(array, a); // true
 inArray(array, b); // false
 ```
 
+#### [RemoveInArray](https://github.com/theoplawinski/utils/blob/main/array/removeInArray.ts)
+
+Removes an item from the array. Removes all its references if multi is set to `true`
+
+```typescript
+import { removeInArray } from "./array/removeInArray";
+
+const array = [1, 2, 3, 1, 2, 3];
+
+removeInArray(array, 2); // [1, 3, 1, 2, 3]
+removeInArray(array, 2, true); // [1, 3, 1, 3]
+```
+
 ### Math
 
 #### [Clamp](https://github.com/theoplawinski/utils/blob/main/math/clamp.ts)
