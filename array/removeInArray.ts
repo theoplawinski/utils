@@ -13,18 +13,18 @@
  * ```
  *
  * @param {any[]} array: Reference array
- * @param {any} item: Item to remove
+ * @param {any} value: Item to remove
  * @param {boolean} multi: Set true to remove all item references
  * @return {any[]}
  */
-export const removeInArray = (array: any[], item: any, multi = false): any[] => {
-  let index = array.indexOf(item);
+export const removeInArray = (array: any[], value: any, multi = false): any[] => {
+  let index = array.indexOf(value);
 
   if (index < 0) return [...array]
 
   do {
     array = [...array.slice(0, index), ...array.slice(index + 1)];
-    index = array.indexOf(item);
+    index = array.indexOf(value);
   } while (multi && index > -1)
 
   return array

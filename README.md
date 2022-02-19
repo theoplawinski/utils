@@ -40,6 +40,21 @@ inArray(array, a); // true
 inArray(array, b); // false
 ```
 
+#### [OccurrencesInArray](https://github.com/theoplawinski/utils/blob/main/array/occurrencesInArray.ts)
+
+Searches an array for all the occurrences of the specified value
+
+```typescript
+import { occurrencesInArray } from "./array/occurrencesInArray";
+
+const array = ["foo", "bar", "foo"];
+const a = "foo";
+const b = "bar";
+
+occurrencesInArray(array, a); // 2
+occurrencesInArray(array, b); // 1
+```
+
 #### [RemoveInArray](https://github.com/theoplawinski/utils/blob/main/array/removeInArray.ts)
 
 Removes an item from the array. Removes all its references if multi is set to `true`

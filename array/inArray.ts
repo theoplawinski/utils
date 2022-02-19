@@ -10,17 +10,17 @@
  * const a = "foo";
  * const b = "Bar";
  *
- * inArray(array, value); // true
+ * inArray(array, a); // true
  * inArray(array, b); // false
  * ```
  *
  * @param {any[]} array: Reference array
- * @param {any} element: Value to search
+ * @param {any} value: Value to search
  * @return {boolean}
  */
-export const inArray = (array: any[], element: any): boolean => {
+export const inArray = (array: any[], value: any): boolean => {
   for (let i in array) {
-    if (array[i] === element) return true
+    if (array[i] === value) return true
   }
 
   return false
