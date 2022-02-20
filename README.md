@@ -68,6 +68,18 @@ removeInArray(array, 2); // [1, 3, 1, 2, 3]
 removeInArray(array, 2, true); // [1, 3, 1, 3]
 ```
 
+#### [UniquifyArray](https://github.com/theoplawinski/utils/blob/main/array/uniquifyArray.ts)
+
+Removes occurrences from the specified array
+
+```typescript
+import { uniquifyArray } from "./array/uniquifyArray";
+
+const array = ["foo", "bar", "foo"];
+
+uniquifyArray(array); // ["foo", "bar"]
+```
+
 ### Math
 
 #### [Clamp](https://github.com/theoplawinski/utils/blob/main/math/clamp.ts)
