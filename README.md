@@ -138,6 +138,18 @@ randomTo(25); // Output between 0-24
 
 ### String
 
+#### [Limit](https://github.com/theoplawinski/utils/blob/main/string/limit.ts)
+
+Limits the string to `n` character
+
+```typescript
+import { limit } from "./string/limit";
+
+const str = "Some str";
+
+limit(str, 4); // "Some"
+```
+
 #### [Slugify](https://github.com/theoplawinski/utils/blob/main/string/slugify.ts)
 
 Converts a string into a slug
