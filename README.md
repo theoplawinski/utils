@@ -164,14 +164,14 @@ slugify(str); // "some-str"
 
 ### Etc.
 
-#### [UseIsHandheldDevice](https://github.com/theoplawinski/utils/blob/main/functions/useIsHandheldDevice.ts)
+#### [IsHandheldDevice](https://github.com/theoplawinski/utils/blob/main/functions/isHandheldDevice.ts)
 
 Detects if it's a handheld device
 
 ```typescript
-import { useIsHandheldDevice } from "./functions/useIsHandheldDevice";
+import { isHandheldDevice } from "./functions/isHandheldDevice";
 
-useIsHandheldDevice(); // true or false
+isHandheldDevice(); // true or false
 ```
 
 ## Licence
